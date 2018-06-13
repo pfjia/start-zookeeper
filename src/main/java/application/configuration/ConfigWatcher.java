@@ -1,4 +1,4 @@
-package application;
+package application.configuration;
 
 import core.Const;
 import org.apache.zookeeper.KeeperException;
@@ -9,6 +9,8 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * 数据订阅者
+ *
  * @author pfjia
  * @since 2018/6/13 13:53
  */

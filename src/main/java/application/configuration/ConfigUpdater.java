@@ -1,4 +1,4 @@
-package application;
+package application.configuration;
 
 import core.Const;
 import org.apache.zookeeper.KeeperException;
@@ -8,6 +8,8 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * 数据发布者
+ *
  * @author pfjia
  * @since 2018/6/13 13:49
  */

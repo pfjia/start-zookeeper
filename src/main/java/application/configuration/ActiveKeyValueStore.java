@@ -1,5 +1,6 @@
-package application;
+package application.configuration;
 
+import application.ConnectionWatcher;
 import core.Const;
 import org.apache.zookeeper.CreateMode;
 import org.apache.zookeeper.KeeperException;
