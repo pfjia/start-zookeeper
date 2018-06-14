@@ -14,12 +14,13 @@ import java.io.File;
  */
 public class TestingServerDemo {
     public static void main(String[] args) throws Exception {
-        TestingServer server=new TestingServer(2181,new File("D:/test"));
+        TestingServer server=new TestingServer(2181);
         CuratorFramework client=CuratorFrameworkFactory.builder()
                 .connectString(server.getConnectString())
                 .retryPolicy(new ExponentialBackoffRetry(1000,3))
                 .build();
         client.start();
+        client.create().creatingParentsIfNeeded().forPath("/test","init".getBytes());
         System.out.println(client.getChildren().forPath("/zookeeper"));
         server.close();
     }

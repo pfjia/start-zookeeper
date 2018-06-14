@@ -9,6 +9,8 @@ import org.apache.curator.retry.ExponentialBackoffRetry;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * 分布式屏障(外部释放barrier)
+ *
  * @author pfjia
  * @since 2018/6/14 0:01
  */

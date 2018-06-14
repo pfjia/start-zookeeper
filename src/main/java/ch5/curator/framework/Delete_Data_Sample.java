@@ -18,6 +18,7 @@ public class Delete_Data_Sample {
                 .connectString(Const.HOSTS)
                 .retryPolicy(new ExponentialBackoffRetry(1000, 3))
                 .build();
+        client.start();
         client.create()
                 .creatingParentsIfNeeded()
                 .withMode(CreateMode.EPHEMERAL)

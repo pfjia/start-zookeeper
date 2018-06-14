@@ -27,12 +27,4 @@ public class ZookeeperClient {
         latch.await();
         return zk;
     }
-
-    public static void main(String[] args) throws IOException {
-        ZooKeeper zk1 = new ZooKeeper(Const.HOSTS, Const.SESSION_TIMEOUT, new ConnectionWatcher());
-        ZooKeeper zk2 = new ZooKeeper(Const.HOSTS, Const.SESSION_TIMEOUT, new ConnectionWatcher());
-        long i1 = zk1.getSessionId();
-        long i2 = zk2.getSessionId();
-        System.out.println();
-    }
 }

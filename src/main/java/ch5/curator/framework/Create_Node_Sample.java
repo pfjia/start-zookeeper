@@ -18,8 +18,9 @@ public class Create_Node_Sample {
                 .build();
         client.start();
         client.create()
-                .creatingParentContainersIfNeeded()
+                .creatingParentsIfNeeded()
                 .withMode(CreateMode.EPHEMERAL)
                 .forPath("/zk-book/c1","init".getBytes());
+
     }
 }

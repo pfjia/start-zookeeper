@@ -10,6 +10,10 @@ import org.apache.curator.retry.ExponentialBackoffRetry;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * leader选举
+ * 1.创建"临时顺序"节点,最小序列号成为leader
+ * 2.创建同一个"临时"节点,创建成功则为leader
+ *
  * @author pfjia
  * @since 2018/6/13 20:50
  */
